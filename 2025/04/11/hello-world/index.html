@@ -14,7 +14,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.outdate = {"enable":true,"daysAgo":180,"message":"本文最后更新于 {time}，请注意文中内容可能已经发生变化。"};window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://kizunaaichan.github.io';</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://kizunaaichan.github.io';</script>
   
   <title>
     第一篇Post就是你了 |
@@ -192,15 +192,15 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -272,14 +272,22 @@
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <blockquote id="outdate-blockquote" style="display: none;"><p></p></blockquote>
-      
       
         <p>字数补丁</p>
 
       
     </div>
     <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong><span class="icon-user icon"></span>本文作者：</strong>Nyaruko @ 赛博垃圾场</p>
+    <p><strong><span class="icon-link icon"></span>本文链接：</strong><a href="https://kizunaaichan.github.io/2025/04/11/hello-world/">https://kizunaaichan.github.io/2025/04/11/hello-world/</a></p>
+    
+    
+    
+    <p><strong><span class="icon-copyright icon"></span>本文版权：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
       
       
       
@@ -385,10 +393,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        466
+        705
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:02
+        00:03
       </div>
     
     
@@ -434,15 +442,15 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">2</div>
+    <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -960,25 +968,6 @@
   </script>
   
 
-<script data-pjax>
-  var updateTime = _$('#post-update-time')?.innerHTML;
-
-  if (updateTime) {
-    const update = new Date(updateTime);
-    const now = new Date();
-    const diff = now - update;
-    const days = diff / 86400000;
-    const { daysAgo, message: template } = window.REIMU_CONFIG.outdate;
-    if (days >= daysAgo) {
-      const message = template.replace(/{time}/, updateTime);
-      const blockquote = _$('#outdate-blockquote');
-      if (blockquote) {
-        blockquote.querySelector('p').innerText = message;
-        blockquote.style.display = 'block';
-      }
-    }
-  }
-</script>
 
 
   
